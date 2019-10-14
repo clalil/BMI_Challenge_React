@@ -1,15 +1,14 @@
 describe('BMI Converter', () => {
   before(function() {
-      cy.visit('localhost:3000');
+      cy.visit('/');
   });
 
   beforeEach(function() {
-      // Reload the application between tests to reset state
       cy.reload();
   });
 
-  it('should display "BMI Converter" text on page', () => {
-      cy.contains('BMI Converter');
+  it('should display "BMI Calculator" text on page', () => {
+      cy.contains('BMI Calculator');
   });
 
   describe('Metric method', () => {
