@@ -9,7 +9,7 @@ import Calculator from '../Components/Calculator';
 describe('<Calculator />', () => {
 
   it('shows metric as the standard method', () => {
-    const component = shallow(<Calculator />);
+    const component = mount(<Calculator />);
     const weightLabel = <label>Weight(kg)</label>;
     const heightLabel = <label>Height(cm)</label>;
     expect(component.contains(weightLabel)).toEqual(true);
