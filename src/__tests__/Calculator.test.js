@@ -7,11 +7,6 @@ import MethodSelect from '../Components/MethodSelect';
 import Calculator from '../Components/Calculator';
 
 describe('<Calculator />', () => {
-  it('renders header', () => {
-    const component = shallow(<Calculator />);
-    const header = <h1>BMI Calculator</h1>;
-    expect(component.contains(h1)).toEqual(true);
-  });
 
   it('shows metric as the standard method', () => {
     const component = shallow(<Calculator />);
