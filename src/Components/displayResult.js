@@ -1,10 +1,16 @@
-import React, { PureComponent } from 'react'
+import React, { Component } from 'react'
 
 class DisplayResult extends Component {
+  calculate = () => {
+    var weight = this.props.weight
+    var height = this.props.height
+  }
   
   render() {
     return (
-      <div id='respons'></div>
+      <div id='respons'>
+        {this.calculate()}
+      </div>
     )
   }
 }
