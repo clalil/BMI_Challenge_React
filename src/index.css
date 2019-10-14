@@ -19,6 +19,7 @@ p {
 
 ul {
   padding-bottom: 0.5rem;
+  list-style: none;
 }
 
 /* Main styling */
