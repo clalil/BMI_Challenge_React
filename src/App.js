@@ -3,8 +3,7 @@ import AppInfo from './Components/AppInfo'
 import Calculator from "./Components/Calculator"
 import Footer from "./Components/Footer"
 
-class App extends Component {
-  render() {
+const App = () => {
     return (
       <>
       <div className="app-container">
@@ -14,7 +13,6 @@ class App extends Component {
         <Footer />
       </>
     );
-  }
 }
 
 export default App;
