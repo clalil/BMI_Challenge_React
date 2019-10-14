@@ -1,4 +1,4 @@
-export const bmiCalculation = (weight, height, method) => {
+export const BMICalculator = (weight, height, method) => {
   parseFloat(weight)
   parseFloat(height)
   let bmi
@@ -6,7 +6,7 @@ export const bmiCalculation = (weight, height, method) => {
   weight = isNaN(weight) ? 0 : weight
   height = isNaN(height) ? 0 : height
 
-  bmi = weight / (height / 100 * height / 100)
+  method === 'metric' ? bmi = bmi_metric(weight, height) : bmi = bmi_imperial(weight, height)
 
   let finalBMI = parseFloat(bmi.toFixed(2))
   let BMIMessage = setBMIMessage(finalBMI)
@@ -30,4 +30,12 @@ const setBMIMessage = (finalBMI) => {
   if (finalBMI > 30) {
     return "Obese"
   }
+}
+
+const bmi_metric = (height, weight) => {
+  return weight / (height / 100 * height / 100)
+}
+
+const bmi_imperial = (height, weight) => {
+  return weight / (height * height) * 703
 }

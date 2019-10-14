@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
-import { bmiCalculation } from '../Modules/BMICalculator'
+import { BMICalculator } from '../Modules/BMICalculator'
 
 class DisplayResult extends Component {
   calculate = () => {
     var weight = this.props.weight
     var height = this.props.height
 
-    return bmiCalculation(weight, height)
+    return BMICalculator(weight, height)
   }
   
   render() {
