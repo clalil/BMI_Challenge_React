@@ -6,7 +6,7 @@ const AppInfo = () => {
   return (
     <>
     <Container>
-    <p className="header">BMI Calculator</p>
+    <p className="header_overrideUI">BMI Calculator</p>
     <p>This calculator is meant for entertainment purposes only.</p>
     <p>
     If you are well trained and muscular, your results will be deceptive. 
