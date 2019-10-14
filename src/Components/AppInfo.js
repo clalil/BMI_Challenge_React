@@ -1,9 +1,11 @@
   
-import React from "react";
+import React from "react"
+import { Container } from 'semantic-ui-react'
 
 const AppInfo = () => {
   return (
     <>
+    <Container>
     <h1>BMI Calculator</h1>
     <p>This calculator is meant for entertainment purposes only.</p>
     <p>
@@ -24,6 +26,7 @@ const AppInfo = () => {
           }
         )}
       </ul>
+      </Container>
     </>
   )
 }

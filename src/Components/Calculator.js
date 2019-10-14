@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import DisplayResult from '../Components/displayResult'
+import DisplayResult from '../Components/DisplayResult'
 
 class Calculator extends Component {
   constructor(props) {
