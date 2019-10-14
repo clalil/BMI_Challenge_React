@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import AppInfo from './Components/AppInfo'
 import Calculator from "./Components/Calculator"
 import Footer from "./Components/Footer"
 
@@ -7,9 +8,10 @@ class App extends Component {
     return (
       <>
       <div className="app-container">
+        <AppInfo />
         <Calculator />
       </div>
-          <Footer />
+        <Footer />
       </>
     );
   }

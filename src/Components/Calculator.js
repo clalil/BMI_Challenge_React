@@ -25,10 +25,10 @@ class BMICalculator extends Component {
           this.setState({ height: e.target.value })} />
         </div>
 
-          <DisplayResult
-            weight={this.state.weight}
-            height={this.state.height}
-          />
+        <DisplayResult
+          weight={this.state.weight}
+          height={this.state.height}
+        />
       </div>
     )
   }
