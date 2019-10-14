@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import DisplayResult from '../Components/displayResult'
 
-class BMICalculator extends Component {
+class Calculator extends Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -34,4 +34,4 @@ class BMICalculator extends Component {
   }
 }
 
-export default BMICalculator;
+export default Calculator;
