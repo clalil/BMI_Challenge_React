@@ -9,17 +9,7 @@ export const BMICalculator = (weight, height, method) => {
 
 
  
-  if (methodSelect === 'metric') {
-    bmi = (weight / (height / 100 * height / 100))
-  } 
-  else if (methodSelect === 'imperial') {
-    bmi = (weight / (height * height) * 703)
-  }
-  else if (methodSelect === '') {
-    return bmi 
-  }
-
-  //bmi = weight / (height / 100 * height / 100)
+  methodSelect === 'metric' ? bmi = (weight / (height / 100 * height / 100)) : bmi = (weight / (height * height) * 703)
   
   let finalBMI = parseFloat(bmi.toFixed(2))
   let BMIMessage = setBMIMessage(finalBMI)
