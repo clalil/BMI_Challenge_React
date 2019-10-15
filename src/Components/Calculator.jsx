@@ -6,15 +6,26 @@ class Calculator extends Component {
   constructor(props) {
     super(props)
     this.state = {
+      method: null,
       weight: '',
       height: ''
     }
   }
 
+  onChangeValue = methodSelector => {
+    debugger
+    this.setState({
+      method: this.target.value
+
+    })
+  }
+
   render() {
+    debugger
     return (
       <div>
-        <MethodSelect />
+        <MethodSelect onChangeValue={this.onChangeValue}/>
+
         <div>
           <label>Weight(kg)</label>
           <input name="weight" value={this.state.weight} onChange={ (e) => 
