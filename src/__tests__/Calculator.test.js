@@ -9,7 +9,7 @@ import Calculator from '../Components/Calculator';
 describe('<Calculator />', () => {
 
   it('shows metric as the standard method', () => {
-    const component = shallow(<Calculator />);
+    const component = mount(<Calculator />);
     const weightLabel = <label>Weight(kg)</label>;
     const heightLabel = <label>Height(cm)</label>;
     expect(component.contains(weightLabel)).toEqual(true);
@@ -29,7 +29,7 @@ describe('<Calculator />', () => {
 
 describe('<DisplayResult />', () => {
   it('displays the calulation correct(metric)', () => {
-    const component = shallow(<DisplayResult method='metric' weight='100' height='195'/>)
+    const component = mount(<DisplayResult method='metric' weight='100' height='195'/>)
     const response = <div id='response'>You are Overweight with a BMI of 26.3</div>
     expect(component.contains(response)).toEqual(true)
   })
