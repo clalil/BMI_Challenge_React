@@ -1,11 +1,12 @@
 import React from 'react'
 
 const MethodSelect = props => {
+  debugger;
   return (
     <div>
-      <select className="MethodSelect" id="method">
-        <option value="metric" onChange={e => props.onChangeValue("metric")}>Metric</option>
-        <option value="imperial" onChange={e => props.onChangeValue("imperial")}>Imperial</option>
+      <select className="MethodSelect" id="method" onChange={props.onChangeValue}>
+        <option value="metric">Metric</option>
+        <option value="imperial">Imperial</option>
       </select>
     </div>
   )

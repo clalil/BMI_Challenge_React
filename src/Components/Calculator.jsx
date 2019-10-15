@@ -13,13 +13,14 @@ class Calculator extends Component {
   }
 
   onChangeValue = e => {
+    debugger;
     this.setState({
       method: e.target.value
     })
   }
 
   render() {
-    currentMethod = this.state.method
+    let currentMethod = this.state.method
     return (
       <div>
         <MethodSelect onChangeValue={this.onChangeValue}/>
@@ -28,18 +29,18 @@ class Calculator extends Component {
           <label>Weight</label>
           <input 
             name="weight" 
-            placeholder={currentMethod === 'metric' ? '(kg)' : '(lbs)'}
+            placeholder={currentMethod === 'metric' ? ' in kilograms (kg)' : ' in pounds (lbs)'}
             value={this.state.weight} 
-            onChange={ (e) => 
+            onChange={(e) => 
           this.setState({ weight: e.target.value })} 
           />
         </div>
         
         <div>
-          <label>Height(cm)</label>
+          <label>Height</label>
           <input 
             name="height" 
-            placeholder={currentMethod === 'metric' ? '(cm)' : '(in)'}
+            placeholder={currentMethod === 'metric' ? ' in centimetres (cm)' : ' in inches (in)'}
             value={this.state.height} 
             onChange={ (e) => 
           this.setState({ height: e.target.value })} 
