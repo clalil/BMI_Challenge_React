@@ -13,10 +13,8 @@ class Calculator extends Component {
   }
 
   onChangeValue = methodSelector => {
-    debugger
     this.setState({
-      method: this.target.value
-
+      method: methodSelector
     })
   }
 
@@ -38,7 +36,7 @@ class Calculator extends Component {
           this.setState({ height: e.target.value })} />
         </div>
 
-        <div>
+        {/* <div>
           <label>Weight(lbs)</label>
           <input name="weight" value={this.state.weight} onChange={ (e) => 
           this.setState({ weight: e.target.value })} />
@@ -48,9 +46,10 @@ class Calculator extends Component {
           <label>Height(inches)</label>
           <input name="height" value={this.state.height} onChange={ (e) => 
           this.setState({ height: e.target.value })} />
-        </div>
+        </div> */}
 
         <DisplayResult
+          method={this.state.method}
           weight={this.state.weight}
           height={this.state.height}
         />

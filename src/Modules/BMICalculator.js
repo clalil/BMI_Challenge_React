@@ -3,10 +3,19 @@ export const BMICalculator = (weight, height, method) => {
   parseFloat(height)
   let bmi
 
+  method = null ? 0 : method
   weight = isNaN(weight) ? 0 : weight
   height = isNaN(height) ? 0 : height
 
-  method === 'metric' ? bmi = bmi_metric(weight, height) : bmi = bmi_imperial(weight, height)
+  if(method == 'metric') {
+    bmi = (weight / (height / 100 * height / 100))
+  } else if(method == 'imperial') {
+    bmi = (weight / (height * height) * 703)
+  } else if(method == null) {
+    bmi = 0
+  }
+
+  // method === 'metric' ? bmi = bmi_metric(weight, height) : bmi = bmi_imperial(weight, height)
 
   let finalBMI = parseFloat(bmi.toFixed(2))
   let BMIMessage = setBMIMessage(finalBMI)
@@ -32,10 +41,10 @@ const setBMIMessage = (finalBMI) => {
   }
 }
 
-const bmi_metric = (height, weight) => {
-  return weight / (height / 100 * height / 100)
-}
+// const bmi_metric = (height, weight) => {
+//   return (weight / (height / 100 * height / 100))
+// }
 
-const bmi_imperial = (height, weight) => {
-  return weight / (height * height) * 703
-}
+// const bmi_imperial = (height, weight) => {
+//   return (weight / (height * height) * 703)
+// }
