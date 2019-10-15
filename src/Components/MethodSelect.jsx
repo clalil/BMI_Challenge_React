@@ -1,7 +1,6 @@
 import React from 'react'
 
 const MethodSelect = props => {
-  debugger;
   return (
     <div>
       <select className="MethodSelect" id="method" onChange={props.onChangeValue}>
