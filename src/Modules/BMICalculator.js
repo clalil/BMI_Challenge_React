@@ -2,20 +2,20 @@ export const BMICalculator = (weight, height, method) => {
   parseFloat(weight)
   parseFloat(height)
   let bmi
+  let methodSelect = method
 
-  method = null ? 0 : method
   weight = isNaN(weight) ? 0 : weight
   height = isNaN(height) ? 0 : height
 
 
  
-  if (method === 'metric') {
+  if (methodSelect === 'metric') {
     bmi = (weight / (height / 100 * height / 100))
   } 
-  else if (method === 'imperial') {
+  else if (methodSelect === 'imperial') {
     bmi = (weight / (height * height) * 703)
   }
-  else if (method === null) {
+  else if (methodSelect === '') {
     return bmi 
   }
 
