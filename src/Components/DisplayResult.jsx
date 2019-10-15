@@ -7,7 +7,7 @@ class DisplayResult extends Component {
     var height = this.props.height
     var method = this.props.method
 
-    return BMICalculator(weight, height)
+    return BMICalculator(weight, height, method)
   }
   
   render() {
