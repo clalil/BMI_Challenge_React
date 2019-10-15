@@ -9,7 +9,7 @@ describe('<DisplayResult />', () => {
     expect(component.contains(response)).toEqual(true)
   })
 
-  it('displays the calulation correct(imperial)', () => {
+  it('displays the calculation correct(imperial)', () => {
     const component = shallow(<DisplayResult method='imperial' weight='140' height='73'/>)
     const response = <div id='response'>You are Underweight with a BMI of 18.47</div>
     expect(component.contains(response)).toEqual(true)
