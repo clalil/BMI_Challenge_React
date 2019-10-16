@@ -26,6 +26,7 @@ class Calculator extends Component {
         onChangeValue={this.onChangeValue}
         />
 
+        <div className="label-padding"></div>
         <div>
           <label>Weight</label>
           <input 

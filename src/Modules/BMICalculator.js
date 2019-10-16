@@ -16,6 +16,9 @@ export const BMICalculator = (weight, height, method) => {
   
   if (isNaN(finalBMI) || !isFinite(finalBMI) || finalBMI === 0) {
     return ''
+  }
+  else if (finalBMI > 50) {
+    return 'Your BMI exceeds our current test range.'
   } else {
     return `You are ${BMIMessage} with a BMI of ${finalBMI}`
   }
@@ -23,7 +26,7 @@ export const BMICalculator = (weight, height, method) => {
 
 const setBMIMessage = (finalBMI) => {
   if (finalBMI < 18.5) {
-    return 'Underweight'
+    return "Underweight"
   }
   if (finalBMI > 18.5 && finalBMI < 25) {
     return "Normal"
@@ -31,7 +34,7 @@ const setBMIMessage = (finalBMI) => {
   if (finalBMI > 25 && finalBMI < 30) {
     return "Overweight"
   }
-  if (finalBMI > 30) {
+  if (finalBMI > 30 && finalBMI < 50) {
     return "Obese"
   }
 }

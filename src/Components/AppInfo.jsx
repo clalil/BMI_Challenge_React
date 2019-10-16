@@ -13,7 +13,7 @@ const AppInfo = () => {
     BMI can also give misleading results if you are very tall. 
     For children, adolescents and older people other recommendations apply.
     </p>
-    <div>
+    <div className="app-info">
         {[["<18.5", "Underweight"],["18.5 < 25", "Normal"],["25 < 30", "Overweight"],[">30", "Obese"]].map(
           arr => {
             return (
