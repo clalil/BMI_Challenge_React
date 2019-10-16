@@ -1,9 +1,9 @@
 import React from 'react'
 
-const MethodSelect = () => {
+const MethodSelect = props => {
   return (
     <div>
-      <select class="form-control" id="method">
+      <select className="MethodSelect" id="method" onChange={props.onChangeValue}>
         <option value="metric">Metric</option>
         <option value="imperial">Imperial</option>
       </select>

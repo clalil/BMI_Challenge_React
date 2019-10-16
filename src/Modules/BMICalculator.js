@@ -2,14 +2,18 @@ export const BMICalculator = (weight, height, method) => {
   parseFloat(weight)
   parseFloat(height)
   let bmi
+  let methodSelect = method
 
   weight = isNaN(weight) ? 0 : weight
   height = isNaN(height) ? 0 : height
 
-  method === 'metric' ? bmi = bmi_metric(weight, height) : bmi = bmi_imperial(weight, height)
 
+ 
+  methodSelect === 'metric' ? bmi = (weight / (height / 100 * height / 100)) : bmi = (weight / (height * height) * 703)
+  
   let finalBMI = parseFloat(bmi.toFixed(2))
   let BMIMessage = setBMIMessage(finalBMI)
+  
   if (isNaN(finalBMI) || !isFinite(finalBMI) || finalBMI === 0) {
     return ''
   } else {
@@ -30,12 +34,4 @@ const setBMIMessage = (finalBMI) => {
   if (finalBMI > 30) {
     return "Obese"
   }
-}
-
-const bmi_metric = (height, weight) => {
-  return weight / (height / 100 * height / 100)
-}
-
-const bmi_imperial = (height, weight) => {
-  return weight / (height * height) * 703
 }

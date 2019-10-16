@@ -11,6 +11,6 @@ describe('<AppInfo />', () => {
 
   it('renders three list elements', () => {
     const component = shallow(<AppInfo />)
-    expect(component.find('li')).toHaveLength(4);
+    expect(component.find('div')).toHaveLength(5);
   });
 });
