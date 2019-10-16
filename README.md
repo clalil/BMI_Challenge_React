@@ -8,6 +8,8 @@
 **Testing frameworks:** Cypress, Jest, Enzyme  
 **Deployed at:** [Netlify](#)
 
+<img src="./src/img/readme.png" alt="Image of app" width="40%">
+
 ## The code   
 This repository contains our solution to the BMI Calculatorr revisited in React challenge.
 
