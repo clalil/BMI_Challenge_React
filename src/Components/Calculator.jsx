@@ -22,7 +22,9 @@ class Calculator extends Component {
     let currentMethod = this.state.method
     return (
       <div>
-        <MethodSelect onChangeValue={this.onChangeValue}/>
+        <MethodSelect 
+        onChangeValue={this.onChangeValue}
+        />
 
         <div>
           <label>Weight</label>
