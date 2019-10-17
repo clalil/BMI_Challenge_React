@@ -8,12 +8,12 @@ export const BMICalculator = (weight, height, method) => {
   height = isNaN(height) ? 0 : height
 
 
- 
+
   methodSelect === 'metric' ? bmi = (weight / (height / 100 * height / 100)) : bmi = (weight / (height * height) * 703)
-  
+
   let finalBMI = parseFloat(bmi.toFixed(2))
   let BMIMessage = setBMIMessage(finalBMI)
-  
+
   if (isNaN(finalBMI) || !isFinite(finalBMI) || finalBMI === 0) {
     return ''
   }

@@ -1,6 +1,6 @@
 # BMI Challenge revisited
 ### Author  
-[Clarissa Liljander](https://github.com/clalil) 
+[Clarissa Liljander](https://github.com/clalil)  
 [Sverrir Steindorsson](https://github.com/shsteindorsson)
 ## Built with  
 **Front End:** React v.16.10.2, Semantic UI, CSS  
@@ -11,7 +11,7 @@
 <img src="./src/img/readme.png" alt="Image of app" width="40%">
 
 ## The code   
-This repository contains our solution to the BMI Calculatorr revisited in React challenge.
+This repository contains our solution to the BMI Calculator challenge revisited in React.
 
 ## Getting started
 ### Dependencies  
@@ -39,7 +39,7 @@ $ yarn start
 ```
 
 ## Updates/Improvements  
-When time given, we would love to adjust the styling.
+When time given, we would love to improve the styling.
 
 ## License  
 This project is under the [MIT-license](https://en.wikipedia.org/wiki/MIT_License).

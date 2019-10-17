@@ -22,28 +22,28 @@ class Calculator extends Component {
     let currentMethod = this.state.method
     return (
       <div>
-        <MethodSelect 
-        onChangeValue={this.onChangeValue}
+        <MethodSelect
+          onChangeValue={this.onChangeValue}
         />
 
         <div className="label-padding"></div>
         <div>
           <label>Weight</label>
-          <input 
-            id="weight" 
+          <input
+            id="weight"
             placeholder={currentMethod === 'metric' ? ' in kilograms (kg)' : ' in pounds (lbs)'}
-            value={this.state.weight} 
-            onChange={this.onChangeValue} 
+            value={this.state.weight}
+            onChange={this.onChangeValue}
           />
         </div>
-        
+
         <div>
           <label>Height</label>
-          <input 
-            id="height" 
+          <input
+            id="height"
             placeholder={currentMethod === 'metric' ? ' in centimetres (cm)' : ' in inches (in)'}
-            value={this.state.height} 
-            onChange={this.onChangeValue} 
+            value={this.state.height}
+            onChange={this.onChangeValue}
           />
         </div>
 
