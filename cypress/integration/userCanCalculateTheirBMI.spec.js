@@ -1,9 +1,9 @@
 describe('BMI Converter', () => {
-  before(function() {
+  before(() => {
       cy.visit('/');
   });
 
-  beforeEach(function() {
+  beforeEach(() => {
       cy.reload();
   });
 
@@ -29,7 +29,7 @@ describe('BMI Converter', () => {
   })
 
   describe('Imperial method', () => {
-      beforeEach( () => {
+      beforeEach(() => {
           // This before block will be executed prior to each test in this describe block
           cy.get('select[id="method"]').select('imperial')
           cy.get('input[id="weight"]').type('200')
