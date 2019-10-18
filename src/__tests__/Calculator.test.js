@@ -1,9 +1,6 @@
 import React from 'react';
 import { mount, shallow } from 'enzyme';
 import { stub } from 'sinon';
-
-import DisplayResult from '../Components/DisplayResult'
-import MethodSelect from '../Components/MethodSelect'
 import Calculator from '../Components/Calculator'
 
 describe('<Calculator />', () => {
