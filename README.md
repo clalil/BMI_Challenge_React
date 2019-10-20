@@ -25,13 +25,17 @@ This repository contains our solution to the BMI Calculator challenge revisited 
 ### Setup   
 To test this application you need to fork it to your own GitHub account and clone it to your local workspace.  
 
+To install all of the dependencies:  
+```
+$ yarn install
+```  
 To run the unit tests:  
 ```
 $ yarn test
 ```  
 To start cypress and run the feature tests:  
 ```
-$ yarn cy:open
+$ yarn run cy:open
 ```
 To start the application and run it on your local host:
 ```
