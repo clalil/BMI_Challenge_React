@@ -15,7 +15,7 @@ This repository contains our solution to the BMI Calculator challenge revisited 
 
 ## Getting started
 ### Dependencies  
-* Create React App    
+* React   
 * Enzyme
 * Cypress 
 * Sinon
