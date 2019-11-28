@@ -6,7 +6,7 @@
 **Front End:** React v.16.10.2, Semantic UI, CSS  
 **Back End:** N/a  
 **Testing frameworks:** Cypress, Jest, Enzyme  
-**Deployed at:** [![Netlify Status](https://api.netlify.com/api/v1/badges/99dac90e-012f-4344-b7b2-212f4df43f93/deploy-status)](https://app.netlify.com/sites/bmicalculator-react/deploys)
+**Deployed at:** [Netlify](https://bmicalculator-react.netlify.com/)[![Netlify Status](https://api.netlify.com/api/v1/badges/99dac90e-012f-4344-b7b2-212f4df43f93/deploy-status)](https://app.netlify.com/sites/bmicalculator-react/deploys)
 
 <img src="./src/img/readme.png" alt="Image of app" width="40%">
 
